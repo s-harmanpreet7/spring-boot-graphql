@@ -1,6 +1,6 @@
 package in.harmanpreetsingh.springbootgraphql.mutation;
 
-import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import graphql.kickstart.tools.GraphQLMutationResolver;
 import in.harmanpreetsingh.springbootgraphql.request.CreateStudentRequest;
 import in.harmanpreetsingh.springbootgraphql.response.StudentResponse;
 import in.harmanpreetsingh.springbootgraphql.service.StudentService;

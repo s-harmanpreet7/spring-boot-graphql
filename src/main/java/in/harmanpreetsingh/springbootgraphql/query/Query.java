@@ -1,6 +1,6 @@
 package in.harmanpreetsingh.springbootgraphql.query;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import in.harmanpreetsingh.springbootgraphql.request.Request;
 import in.harmanpreetsingh.springbootgraphql.response.StudentResponse;
 import in.harmanpreetsingh.springbootgraphql.service.StudentService;

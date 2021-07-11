@@ -1,7 +1,7 @@
 type Query {
     firstQuery: String
     fullName(request: Request): String
-    student(id: Long): StudentResponse
+    student(id: Int): StudentResponse
 }
 
 input Request {
@@ -10,7 +10,7 @@ input Request {
 }
 
 type StudentResponse {
-    id: Long
+    id: Int
     firstName: String
     lastName: String
     email: String
@@ -28,7 +28,7 @@ enum SubjectNameFilter {
 }
 
 type SubjectResponse {
-    id: Long,
+    id: Int,
     subjectName: String
     marksObtained: Float
 }

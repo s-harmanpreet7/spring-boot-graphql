@@ -1,6 +1,6 @@
 package in.harmanpreetsingh.springbootgraphql.resolver;
 
-import com.coxautodev.graphql.tools.GraphQLResolver;
+import graphql.kickstart.tools.GraphQLResolver;
 import in.harmanpreetsingh.springbootgraphql.entity.Subject;
 import in.harmanpreetsingh.springbootgraphql.enums.SubjectNameFilter;
 import in.harmanpreetsingh.springbootgraphql.response.StudentResponse;
