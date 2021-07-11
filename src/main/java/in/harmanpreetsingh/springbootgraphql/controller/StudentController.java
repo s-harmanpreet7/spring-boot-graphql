@@ -14,6 +14,10 @@ public class StudentController {
 
     @GetMapping()
     public StudentResponse getStudent() {
-        return new StudentResponse(1, "John", "Doe");
+        return new StudentResponse().builder()
+                .id(1)
+                .firstName("John")
+                .lastName("Doe")
+                .build();
     }
 }
