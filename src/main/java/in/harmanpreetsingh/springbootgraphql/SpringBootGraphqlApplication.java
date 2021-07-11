@@ -9,7 +9,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @ComponentScan({"in.harmanpreetsingh.springbootgraphql.service",
         "in.harmanpreetsingh.springbootgraphql.query",
-        "in.harmanpreetsingh.springbootgraphql.resolver"})
+        "in.harmanpreetsingh.springbootgraphql.resolver",
+        "in.harmanpreetsingh.springbootgraphql.mutation"})
 @EntityScan("in.harmanpreetsingh.springbootgraphql.entity")
 @EnableJpaRepositories("in.harmanpreetsingh.springbootgraphql.repository")
 public class SpringBootGraphqlApplication {

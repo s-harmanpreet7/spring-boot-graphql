@@ -1,5 +1,6 @@
 package in.harmanpreetsingh.springbootgraphql.entity;
 
+import in.harmanpreetsingh.springbootgraphql.request.CreateStudentRequest;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -31,4 +32,10 @@ public class Student {
 
     @OneToMany(mappedBy = "student")
     private List<Subject> learningSubjects;
+
+    public Student (CreateStudentRequest createStudentRequest) {
+        this.firstName = createStudentRequest.getFirstName();
+        this.lastName = createStudentRequest.getLastName();
+        this.email = createStudentRequest.getEmail();
+    }
 }
