@@ -10,7 +10,7 @@ public class Query implements GraphQLQueryResolver {
         return "First Query";
     }
 
-    public String secondQuery() {
-        return "Second Query";
+    public String fullName(String firstName, String lastName) {
+        return firstName + " " + lastName;
     }
 }
