@@ -19,21 +19,16 @@ public class StudentResponse {
     private String city;
     private List<SubjectResponse> learningSubjects;
 
+    // This field is only for internal logic, DO NOT PUT IN SCHEMA
+    private Student student;
+
     public StudentResponse(Student student) {
-        this.id = id;
+        this.id = student.getId();
         this.firstName = student.getFirstName();
         this.lastName = student.getLastName();
         this.email = student.getEmail();
         this.street = student.getAddress().getStreet();
         this.city = student.getAddress().getCity();
-
-
-        if (Objects.nonNull(student.getLearningSubjects())) {
-            ArrayList<SubjectResponse> learningSubjects = new ArrayList<>();
-            for (Subject subject : student.getLearningSubjects()) {
-                learningSubjects.add(new SubjectResponse(subject));
-            }
-
-        }
+        this.student = student;
     }
 }
