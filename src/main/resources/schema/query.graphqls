@@ -16,8 +16,14 @@ type StudentResponse {
     email: String
     street: String
     city: String
-    learningSubjects: [SubjectResponse]
+    learningSubjects(subjectNameFilter: SubjectNameFilter): [SubjectResponse]
     fullName: String
+}
+
+enum SubjectNameFilter {
+    Java,
+    MySQL,
+    MongoDB
 }
 
 type SubjectResponse {
