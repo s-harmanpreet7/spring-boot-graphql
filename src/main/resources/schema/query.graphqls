@@ -4,6 +4,6 @@ type Query {
 }
 
 input Request {
-    firstName: String
+    firstName: String!
     lastName: String
 }
