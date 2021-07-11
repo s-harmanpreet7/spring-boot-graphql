@@ -9,6 +9,7 @@ import in.harmanpreetsingh.springbootgraphql.repository.SubjectRepository;
 import in.harmanpreetsingh.springbootgraphql.request.CreateStudentRequest;
 import in.harmanpreetsingh.springbootgraphql.request.CreateSubjectRequest;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class StudentService {
 
     private final StudentRepository studentRepository;
@@ -23,6 +25,7 @@ public class StudentService {
     private final SubjectRepository subjectRepository;
 
     public Student getStudentById(long id) {
+        log.info("Fetching Student with id: " + id);
         return studentRepository.findById(id).get();
     }
 
