@@ -18,6 +18,7 @@ public class StudentResponse {
     private String street;
     private String city;
     private List<SubjectResponse> learningSubjects;
+    private String fullName;
 
     // This field is only for internal logic, DO NOT PUT IN SCHEMA
     private Student student;
